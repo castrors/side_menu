@@ -48,8 +48,9 @@ class MyHomePage extends StatelessWidget {
               buttonExpanded: Text(
                 'Editar opções',
               ),
-              bodyWidget: Expanded(
+              bodyWidget: Container(
                 child: ListView.builder(
+                    shrinkWrap: true,
                     itemCount: _items.length,
                     itemBuilder: (context, index) {
                       return Text(

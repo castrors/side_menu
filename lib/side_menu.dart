@@ -27,7 +27,7 @@ class _SideMenuState extends State<SideMenu>
   double maxWidth;
   double buttonSize = 34;
   double minWidth = 0;
-  bool isCollapsed = true;
+  bool isCollapsed = false;
   AnimationController _animationController;
   Animation<double> widthAnimation;
   int currentSelectedIndex = 0;
@@ -42,7 +42,7 @@ class _SideMenuState extends State<SideMenu>
     maxWidth = widget.screenWidth - buttonSize;
     _animationController =
         AnimationController(vsync: this, duration: Duration(milliseconds: 300));
-    widthAnimation = Tween<double>(begin: maxWidth, end: minWidth)
+    widthAnimation = Tween<double>(begin: minWidth, end: maxWidth)
         .animate(_animationController);
   }
 

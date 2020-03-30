@@ -1,7 +1,7 @@
-name: side_menu
-description: A new Flutter package project.
-version: 0.0.3
-homepage: https://github.com/castrors/side_menu
+name: example
+description: A new Flutter project.
+
+version: 1.0.0+1
 
 environment:
   sdk: ">=2.1.0 <3.0.0"
@@ -9,9 +9,12 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  side_menu:
+    path: ../
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
 flutter:
+  uses-material-design: true
