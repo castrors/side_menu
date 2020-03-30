@@ -27,7 +27,7 @@ class _SideMenuState extends State<SideMenu>
   double maxWidth;
   double buttonSize = 34;
   double minWidth = 0;
-  bool isCollapsed = false;
+  bool isCollapsed = true;
   AnimationController _animationController;
   Animation<double> widthAnimation;
   int currentSelectedIndex = 0;
